@@ -1,0 +1,12 @@
+node_modules/
+.vscode/
+
+Bodyfit-main.zip
+*.log
+*.tmp
+
+.DS_Store
+Thumbs.db
+
+.env
+.env.*

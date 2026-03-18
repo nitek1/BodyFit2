@@ -1,0 +1,4 @@
+BodyFit runtime setup notes
+- PHP 8.2 installed via winget
+- ODBC Driver 18 for SQL Server installed via winget
+- Dynamic pages still blocked by missing SQL Server instance/service

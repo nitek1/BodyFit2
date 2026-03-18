@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyFit - Cadastro</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1>
+                <img src="imagens/bodyfit.png" alt="Logo" width="100" height="100" align="middle">
+                BODY<span>FIT</span>
+            </h1>
+        </div>
+       
+        <form id="signupForm" method="POST" action="cadastro.php">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Crie um nome de usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Crie uma senha (mín. 8 caracteres)" required minlength="8">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirme a Senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repita sua senha" required>
+            </div>
+            <button type="submit" class="login-btn">Cadastrar</button>
+            <div class="links">
+                <span>Já tem conta? <a href="login.html">Faça login</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if(password !== confirmPassword) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+            
+            // Se as senhas coincidirem, envia o formulário
+            this.submit();
+        });
+    </script>
+
+    
+</body>
+</html>

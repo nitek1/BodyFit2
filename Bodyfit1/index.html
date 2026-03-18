@@ -1,0 +1,152 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodyfit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar atualizada -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/bodyfit.png" alt="BodyFit Logo" class="logo-img">
+            <span class="logo-text">BODY<span>FIT</span></span>
+        </a>
+    
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            
+            
+            
+             <a href="Sobre Nós.html">Sobre Nós</a>
+            <a href="login.html" class="btn-login">Entrar</a>
+        </div>
+    
+        <button class="menu-toggle">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Hero Section ampliada -->
+    <section class="hero">
+        <div class="hero-content">
+           <h1 class="animated-title">SUA MELHOR VERSÃO COMEÇA AQUI</h1>
+            <p>várias modalidades</p>
+            <button class="plan-btn" style="margin-top: 2rem;" onclick="window.location.href='cadastro.html'">Comece Agora</button>
+        </div>
+    </section>
+
+    <section class="featured-classes" style="background: #f8f9fa; padding: 4rem 2rem;">
+    <div class="classes-container">
+        <h2 style="text-align: center; margin-bottom: 1rem;">CONHEÇA NOSSAS AULAS</h2>
+        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.2rem;">Diversas modalidades para todos os objetivos</p>
+        
+        <!-- Card Musculação -->
+        <div class="class-feature">
+            <div class="class-image-large" style="background-image: url('https://images.unsplash.com/photo-1581009137042-c552e485697a?q=80&w=2070');"></div>
+            <div class="class-content">
+                <h3>Musculação</h3>
+                <p>Treinos de força e resistência para todos os níveis, com equipamentos modernos e acompanhamento profissional especializado. Ideal para quem busca ganho de massa muscular, definição e melhora da saúde óssea e articular.</p>
+                
+            </div>
+        </div>
+        
+        <!-- Card Crossfit -->
+        <div class="class-feature">
+            <div class="class-image-large" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070');"></div>
+            <div class="class-content">
+                <h3>Crossfit</h3>
+                <p>Treinos funcionais de alta intensidade que melhoram condicionamento físico, força e resistência em um ambiente desafiador. Conhecido por sua variedade de exercícios e por promover alto gasto calórico e trabalho em equipe.</p>
+                
+            </div>
+        </div>
+        
+        <!-- Card Yoga -->
+        <div class="class-feature">
+            <div class="class-image-large" style="background-image: url('https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=1964');"></div>
+            <div class="class-content">
+                <h3>Yoga</h3>
+                <p>Pratique posturas, técnicas de respiração e meditação para equilíbrio físico e mental, com instrutores certificados. Ajuda a aumentar flexibilidade, reduzir estresse e melhorar concentração e bem-estar geral.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <section class="section" style="background: #000000; padding: 4rem 2rem;">
+    <h2 style="text-align: center; margin-bottom: 2rem; color: white;">ESCOLHA SEU PLANO IDEAL</h2>
+    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.2rem; color: white;">Treine quando e onde quiser</p>
+    
+    <div class="plans-container">
+        <div class="plan-card">
+            <h3>PLANO BÁSICO</h3>
+            <div class="price">R$ 99,90<span>/mês</span></div>
+            <ul class="benefits">
+                <li>Acesso a todas unidades</li>
+                <li> +50 exercícios</li>
+                <li>1 aula grátis por mês</li>
+            </ul>
+            <button class="plan-btn" onclick="window.location.href='cadastro.html'">Assinar Agora</button>
+        </div>
+
+        <div class="plan-card highlight">
+            <h3>PLANO PREMIUM</h3>
+            <div class="price">R$ 149,90<span>/mês</span></div>
+            <ul class="benefits">
+                <li>Todos benefícios Básico</li>
+                <li>Aulas ilimitadas</li>
+                <li>Personalizar treinos</li>
+                <li>Nutricionista online</li>
+            </ul>
+            <button class="plan-btn" onclick="window.location.href='cadastro.html'">Assinar Agora</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção Diferenciais Atualizada -->
+    <section class="section" style="background: #f8f9fa; padding: 4rem 2rem;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">POR QUE ESCOLHER NOSSA ACADEMIA?</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="bi bi-gear-wide-connected" style="font-size: 2.5rem; color: #E30613;"></i>
+                <h3>Equipamentos de Última Geração</h3>
+                <p>Máquinas TechnoGym e Life Fitness</p>
+            </div>
+           
+            <div class="card">
+                <i class="bi bi-shield-check" style="font-size: 2.5rem; color: #E30613;"></i>
+                <h3>Ambiente Seguro</h3>
+                <p>Protocolos sanitários rigorosos</p>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="imagens/bodyfit.png" alt="BodyFit Logo">
+            <span class="logo-text">BODY<span>FIT</span></span>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 BodyFit. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

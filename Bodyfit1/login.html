@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyFit - Login</title>
+    <link rel="stylesheet" href="styles3.css">
+        
+    
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1>
+                <img src="imagens/bodyfit.png" alt="Logo" width="100" height="100" align="middle">
+                BODY<span>FIT</span>
+              </h1>
+        </div>
+       
+        <form method="POST" action="login.php">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+            <div class="links">
+                <a href="#">Esqueceu a senha?</a>
+                <br>
+                <a href="Cadastro.html">Criar nova conta</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Redirecionamento após validação
+         // Impede o envio do formulário
+    
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+    
+            if (!username || !password) {
+                alert('Por favor, preencha todos os campos!');
+            } else {
+                // Aqui você poderia adicionar autenticação real
+                // Redireciona para a página de Aulas
+                window.location.href = "Aulas.php";
+                 window.location.href = "Evolução.php";
+                
+            }
+        
+    </script>
+</body>
+</html>
